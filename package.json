@@ -17,6 +17,7 @@
     "mongoose": "^6.8.4",
     "morgan": "~1.9.1",
     "pusher": "^5.1.2",
-    "pusher-js": "^8.0.1"
+    "pusher-js": "^8.0.1",
+    "mongodb": "^3.6.3"
   }
 }

@@ -29,7 +29,6 @@ router.get('/messages', (req, res) =>{
 
 router.post('/message', (req, res) => {
     const payload = req.body;
-    console.log(payload)
     pusher.trigger('chat', 'message', payload);
     const newChat = new Chat(payload)
     newChat.save()
