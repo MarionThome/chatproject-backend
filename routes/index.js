@@ -37,5 +37,16 @@ router.post('/message', (req, res) => {
     
 });
 
+router.get('/messageFromUser/:author', (req, res) => {
+  Chat.find({author : req.params.author}).then((data) => {
+    if(!data){
+      res.json({result : false})
+    }
+    else {
+      res.json({result : true})
+    }
+  })
+})
+
 
 module.exports = router;
